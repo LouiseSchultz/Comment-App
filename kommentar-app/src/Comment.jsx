@@ -8,7 +8,6 @@ function Comment({ comments, setComments }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(e.target.value);
-    //onCommentSubmit({ name, message });
     setName("");
     setMessage("");
     console.log(e.target.name.value);
