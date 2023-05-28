@@ -34,12 +34,12 @@ function Comment({ comments, setComments }) {
   return (
     <form onSubmit={handleSubmit}>
       <h4> Schreib einen Kommentar</h4>
-
       <p>
         Deine Emailadresse wird nicht öffentlich angezeigt. Erfoderliche Felder
         sind mit * markiert.
       </p>
       <label htmlFor="name">*Name:</label>
+      <br />
       <input
         type="text"
         required="required"
@@ -51,8 +51,8 @@ function Comment({ comments, setComments }) {
       />
       <br />
       <br />
-
       <label htmlFor="message">*Nachricht:</label>
+      <br />
       <textarea
         id="message"
         name="message"
@@ -62,15 +62,17 @@ function Comment({ comments, setComments }) {
         onChange={(e) => setMessage(e.target.value)}></textarea>
       <br />
       <br />
-
       <label htmlFor="email">*Email:</label>
+      <br />
       <input
         type="email"
         name="email"
         placeholder="Hier kommt dein Email hin"
         required="required"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}></input>
+        onChange={(e) => setEmail(e.target.value)}></input>{" "}
+      <br />
+      <br />
       <button type="submit">Kommentar abschicken</button>
     </form>
   );
