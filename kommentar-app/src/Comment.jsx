@@ -55,7 +55,8 @@ function Comment({ comments, setComments }) {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              <div className="d-flex flex-column justify-content-c
+              <div
+                className="d-flex flex-column justify-content-c
 enter align-items-center">
                 <div className="message"> </div>
                 <label htmlFor="message">*Nachricht:</label>
@@ -77,13 +78,12 @@ enter align-items-center">
                 required="required"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}></input>{" "}
-                             Abschicken
- <div className="submit">
+              Abschicken
+              <div className="submit">
                 <button
                   type="submit"
                   class="btn btn-light"
                   style={{ width: "60px", border: "5px" }}>
-                    
                   <i
                     className="bi bi-send"
                     style={{ color: "grey", FontSize: "1rem" }}></i>
