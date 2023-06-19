@@ -1,8 +1,8 @@
-# Comment App
+# Comment App (Kommentar App)
 
 ## About Project
 
-The Comment-App is a web application where users can add and delete comments, which are then displayed in the browser. With the simple and intuitive interface one can easily manage comments in real-time.
+The Comment-App is a web application in German where users can add and delete comments, which are then displayed in the browser. With the simple and intuitive interface one can easily manage comments in real-time.
 
 
  ## Developed With
