@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Header() {
   return (
-    <><h1>Teile deine Meinung zu diesem Artikel!</h1>
+    <>
+      <h2>Schreibe deinen kommentar</h2>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

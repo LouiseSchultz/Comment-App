@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
-import "./index.css";
 import Comment from "./Comment";
 import CommentSection from "./CommentSection";
-
+import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 function App() {
   const [comments, setComments] = useState(() => {
     const savedComments = JSON.parse(localStorage.getItem("comments"));
@@ -15,11 +15,13 @@ function App() {
   }, [comments]);
 
   return (
-    <>
-      <Header />
-      <CommentSection comments={comments} setComments={setComments} />
-      <Comment comments={comments} setComments={setComments} />
-    </>
+    <div>
+      <div className="d-flex flex-column justify-content-center align-items-center ">
+        <Header />
+        <CommentSection comments={comments} setComments={setComments} />
+        <Comment comments={comments} setComments={setComments} />
+      </div>
+    </div>
   );
 }
 export default App;
